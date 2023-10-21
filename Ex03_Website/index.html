@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CIS212 - Week 8</title>
+    <script src="script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>CIS212 - Dynamic HTML</h1>
+    <table id = "carsTable">
+      <th>Cars</th>
+      <tr>
+        <td><a href="carInfo.html" onclick="getCarName(this.id)" id="fordEdge">Ford Edge</a></td>
+      </tr>
+      <tr>
+        <td><a href="carInfo.html" onclick="getCarName(this.id)" id="fordMustang">Ford Mustang</a></td>
+      </tr>
+      <tr>
+        <td><a href="carInfo.html" onclick="getCarName(this.id)" id="chevySuburban">Chevy Suburban</a></td>
+      </tr>
+      <tr>
+        <td><a href="carInfo.html" onclick="getCarName(this.id)" id="chevySilverado">Chevy Silverado</a></td>
+      </tr>
+    </table>
+    <br><br><br>
+
+    <!--<input type="text" id="txt_html_newCar" placeholder="Enter New Car">-->
+    <input type="text" id="txt_html_newCar" value="Enter New Car" onclick="clearTextbox()">
+    <button type="button" id="btn_html_addCar" onclick="addCar()">Enter</button>
+  </body>
+</html>
